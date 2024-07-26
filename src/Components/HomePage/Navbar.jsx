@@ -31,7 +31,7 @@ function Navbar() {
         <p className='text-lg pt-4 font-bold text-blue-700 '>INFOSYS COMPANY</p>
       </div>
       <div
-        className='flex bg-blue-700 w-[5%]'
+        className='flex bg-blue-700 w-[5%] translate-x-[1px]'
         style={{ clipPath: 'polygon(100% 0, 100% 50%, 100% 100%, 5% 99%, 0 86%)' }}
       >
        
@@ -40,8 +40,8 @@ function Navbar() {
        
       </div>
       <div className='flex bg-blue-700 w-[60%] justify-between p-6 text-white '>
-        <p className='hover:text-blue-300 cursor-pointer'>Home</p>
-        <p className='hover:text-blue-300 cursor-pointer'>About Us</p>
+        <p className='hover:text-blue-300 cursor-pointer font-bold'>Home</p>
+        <p className='hover:text-blue-300 cursor-pointer font-bold'>About Us</p>
         <div className='flex gap-2 relative'>
           <p className='hover:text-blue-300 cursor-pointer'>Menu</p>
           <i className="fa-solid fa-angle-down  mt-1 cursor-pointer" onClick={toggleMenu}></i>
