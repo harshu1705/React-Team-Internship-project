@@ -3,6 +3,7 @@ import './App.css';
 import Home from '../src/Pages/Home'
 import Blog from '../src/Pages/Blog'
 import Project from '../src/Pages/Project'
+import Event from '../src/Pages/Event'
 function App() {
   return (
    <Router>
@@ -10,7 +11,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/Blog" element={<Blog/>}/>
         <Route path="/Project" element={<Project/>}/>
-      
+        <Route path="/Event" element={<Event/>}/>
       </Routes>
    </Router>
   );

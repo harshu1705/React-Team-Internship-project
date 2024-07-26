@@ -1,7 +1,7 @@
 // src/Pages/Event.js
 import React from 'react';
 import Navbar from '../Components/HomePage/Navbar';
-import EventCard from '../Components/EventCard';
+import EventCard from '../Components/HomePage/EventCard';
 import event1 from '../assets/event1.jpg';
 import event2 from '../assets/event2.jpg';
 import event3 from '../assets/event3.jpg';
