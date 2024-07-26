@@ -2,7 +2,10 @@ import React from 'react'
 
 function Blog() {
   return (
-    <div>Blog</div>
+    <div>Our Blog
+      <p>Hello, welcome!</p>
+    </div>
+  
   )
 }
 
