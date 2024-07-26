@@ -31,7 +31,7 @@ function Navbar() {
         <p className='text-lg pt-4 font-bold text-blue-700 '>INFOSYS COMPANY</p>
       </div>
       <div
-        className='flex bg-blue-700 w-[5%]'
+        className='flex bg-blue-700 w-[5%] translate-x-[1px]'
         style={{ clipPath: 'polygon(100% 0, 100% 50%, 100% 100%, 5% 99%, 0 86%)' }}
       >
        
@@ -43,7 +43,7 @@ function Navbar() {
         <p className='hover:text-blue-300 cursor-pointer font-bold'>Home</p>
         <p className='hover:text-blue-300 cursor-pointer font-bold'>About Us</p>
         <div className='flex gap-2 relative'>
-          <p className='hover:text-blue-300 cursor-pointer font-bold'>Menu</p>
+          <p className='hover:text-blue-300 cursor-pointer'>Menu</p>
           <i className="fa-solid fa-angle-down  mt-1 cursor-pointer" onClick={toggleMenu}></i>
           {menuVisible && (
             <div className='absolute top-8 left-0 bg-white text-black p-2 shadow-lg w-24'>
@@ -54,7 +54,7 @@ function Navbar() {
             </div>
           )}
         </div>
-        <p className='hover:text-blue-300 cursor-pointer font-bold'>Contact Us</p>
+        <p className='hover:text-blue-300 cursor-pointer'>Contact Us</p>
       </div>
     </div>
   );

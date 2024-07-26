@@ -15,7 +15,7 @@ function ContactUs() {
           
         />
         </div>
-        <div className='flex justify-center gap-10'>
+        <div className='flex justify-center gap-10 mb-6'>
             <p className='text-blue-700 font-bold'>Email*:</p>
             <input
           type='text'
