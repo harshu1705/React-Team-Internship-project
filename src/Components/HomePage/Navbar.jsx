@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Logo from '../HomePage/LOGO.png'
 
 function Navbar() {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -22,10 +23,12 @@ function Navbar() {
   }
 
   return (
-    <div className='flex w-full'>
-      <div className='flex w-[30%] justify-center gap-10 p-6'>
-        <p className='text-lg'> Logo</p>
-        <p className='text-lg '>Company Name</p>
+    <div className='flex w-full h-20'>
+      <div className='flex w-[30%] justify-center gap-10 p-3'>
+      <div className='flex h-16 '>
+      <img src={Logo} alt='xyz '  />
+      </div>
+        <p className='text-lg pt-4 font-bold text-blue-700 '>INFOSYS COMPANY</p>
       </div>
       <div
         className='flex bg-blue-700 w-[5%]'
@@ -33,7 +36,7 @@ function Navbar() {
       >
        
       </div>
-      <div className='flex bg-blue-700 w-[5%]'>
+      <div className='flex items-center bg-blue-700 w-[5%]'>
        
       </div>
       <div className='flex bg-blue-700 w-[60%] justify-between p-6 text-white '>
