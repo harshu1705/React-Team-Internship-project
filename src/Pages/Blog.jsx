@@ -10,9 +10,9 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 function Blog() {
   return (
     <div>
-      
+      <div><Navbar/></div>
       <div className="flex-container">
-        <div><Navbar/></div>
+        {/* <div><Navbar/></div> */}
         <div className="our-blog"> Our Blog </div>
         <div>
         <BlogEntry title="New Endeavours" />
@@ -20,8 +20,9 @@ function Blog() {
         <BlogEntry title="New Endeavours" />
         <BlogEntry title="New Endeavours" /> 
         </div>
-        <div><Footer/></div>
+        {/* <div><Footer/></div> */}
       </div> 
+      <div><Footer/></div>
     </div>
   
   )
