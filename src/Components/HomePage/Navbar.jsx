@@ -48,7 +48,7 @@ function Navbar() {
       <div className='flex h-16 '>
       <img src={Logo} alt='xyz '  />
       </div>
-        <p className='text-lg pt-4 font-bold text-blue-700 '>INFOSYS COMPANY</p>
+        <p className='text-[30px] pt-2 font-bold text-blue-700 '>XYZ COMPANY</p>
       </div>
       <div
         className='flex bg-blue-700 w-[5%] translate-x-[1px]'
