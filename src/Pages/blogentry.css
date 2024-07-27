@@ -1,0 +1,107 @@
+.blog-entry {
+    background-color: #1d4ed8; 
+    height: 100px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex: 1 3;
+    border-radius: 20px ;
+    box-shadow: 0 0 10px rgba(0,0,0,0);
+    margin: 20px;
+
+}
+
+.blog-entry-left{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.blog-entry-left img{
+    align-items: center;
+    justify-content: center;
+}
+
+/* star css part */
+
+.blog-entry-right{
+    display: flex;
+    flex-direction: column;
+    /* padding: 5px; */
+}
+
+.blog-entry-right title{
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    justify-content:flex-start;
+    margin-bottom: 10px;
+}
+
+.title{
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+
+.blog-entry-right p{
+    font-family: Arial, sans-serif;
+    color: #fff;
+
+}
+
+.our-blog {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    color: #1d4ed8;
+    margin: 10px;  
+
+    
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+
+}
+
+  
+
+
+  /* .blog-entry {
+    background-color: #1d4ed8; 
+    padding: 20px;
+    text-align: center;
+    height: 10%;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 20px ;
+  }
+  
+  .blog-entry img {
+    width: 50px; /* Adjust as needed *
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  .our-blog {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    color: #1d4ed8;
+    margin: 10px; /* Or use specific margin properties *
+    display: flex;
+  }
+  .blog-entry title{
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    justify-content:flex-start;
+
+  }
+  */
+  
