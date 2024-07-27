@@ -4,6 +4,7 @@ import Home from '../src/Pages/Home'
 import Blog from '../src/Pages/Blog'
 import Project from '../src/Pages/Project'
 import Event from '../src/Pages/Event'
+import EventDetail from './Pages/EventDetail';
 function App() {
   return (
    <Router>
@@ -12,10 +13,10 @@ function App() {
         <Route path="/Blog" element={<Blog/>}/>
         <Route path="/Project" element={<Project/>}/>
         <Route path="/Event" element={<Event/>}/>
+        <Route path="/event/:id" element={<EventDetail />} />
       </Routes>
    </Router>
   );
 }
 
 export default App;
-
