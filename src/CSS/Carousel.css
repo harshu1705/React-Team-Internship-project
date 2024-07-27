@@ -14,7 +14,8 @@
 }
 
 .carousel-image {
-  width: 20%;
-  height: 250px;
-  flex-shrink: 0; 
+  width: 15%;
+  height:auto;
+  flex-shrink: 0;
+  margin:0 10px; 
 }
