@@ -1,0 +1,20 @@
+.carousel {
+  display: flex;
+  width: calc(200%); 
+  animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.carousel-image {
+  width: 20%;
+  height: 250px;
+  flex-shrink: 0; 
+}

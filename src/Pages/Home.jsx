@@ -9,8 +9,12 @@ function Home() {
     <div className='flex flex-col gap-2'>
         <Navbar/>
         <Body/>
-        <AboutUs/>
-        <ContactUs/>
+        <div id="about-us-section">
+             <AboutUs/>
+        </div>
+       <div id="contact-us-section">
+            <ContactUs/>
+       </div>
         <Footer/>
     </div>
   )
