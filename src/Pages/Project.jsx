@@ -50,20 +50,20 @@ function Project() {
       <div>
         <Navbar />
       </div>
-      <p className='flex justify-center text-blue-700 text-[30px] font-bold mt-5 pb-3'>Projects</p>
-      <div className='relative flex items-center justify-center bg-blue-700 p-3 overflow-hidden'>
+      <p className='flex justify-center text-dark-blue text-[30px] font-bold mt-5 pb-3'>Projects</p>
+      <div className='relative flex items-center justify-center bg-dark-blue p-3 overflow-hidden'>
         <div className='carousel'>
           {images.concat(images).map((image, index) => (
             <img key={index} src={image} alt={`Slide ${index}`} className='carousel-image' />
           ))}
         </div>
       </div>
-      <div className='flex justify-center mt-5 text-blue-700 text-[25px] font-bold'>MORE ABOUT PROJECTS</div>
+      <div className='flex justify-center mt-5 text-dark-blue text-[25px] font-bold'>MORE ABOUT PROJECTS</div>
     <div className='flex  '>
         
         <div className='  grid grid-cols-3  w-full gap-5 p-5'>
         {ProjectCards.map((Project) => (
-           <div className='flex  bg-blue-700 justify-between rounded-lg p-3'>
+           <div className='flex  bg-dark-blue justify-between rounded-lg p-3'>
              <div className='flex flex-col gap-3 w-[80%]'>
              <p className='text-white text-bold text-[25px]'>{Project.title}</p>
              <p className='text-white'>{Project.description}</p>

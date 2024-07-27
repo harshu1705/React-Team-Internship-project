@@ -2,8 +2,8 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='flex bg-blue-700  flex-col p-6'>
-        <div className='flex bg-blue-700 justify-evenly '>
+    <div className='flex bg-dark-blue  flex-col p-6'>
+        <div className='flex bg-dark-blue justify-evenly '>
         <div className='flex flex-col'>
             <p className='text-white text-lg font-bold'>About</p>
             <p className='text-white'>About</p>

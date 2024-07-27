@@ -4,10 +4,10 @@ function ContactUs() {
   return (
     <div className='flex flex-col gap-7'>
         <div className='flex justify-center '>
-        <p className='text-blue-700 flex  text-[30px] font-bold'>Contact Us</p>
+        <p className='text-dark-blue  text-[30px] font-bold'>Contact Us</p>
         </div>
         <div className='flex justify-center gap-10'>
-            <p className='text-blue-700 font-bold'>Name*:</p>
+            <p className='text-dark-blue font-bold'>Name*:</p>
             <input
           type='text'
           id='name'
@@ -16,7 +16,7 @@ function ContactUs() {
         />
         </div>
         <div className='flex justify-center gap-10 mb-6'>
-            <p className='text-blue-700 font-bold'>Email*:</p>
+            <p className='text-dark-blue font-bold'>Email*:</p>
             <input
           type='text'
           id='name'
