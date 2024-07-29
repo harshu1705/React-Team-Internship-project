@@ -21,6 +21,7 @@ function Project() {
       return newVisibleTexts;
     });
   };
+  
 
   return (
     <div className="flex flex-col gap-3">
