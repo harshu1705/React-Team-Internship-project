@@ -30,6 +30,10 @@ function Navbar() {
     navigate('/Review');
   }
 
+  function Research(){
+    navigate('/Research');
+  }
+
   const scrollToAboutUs = () => {
     const aboutUsSection = document.getElementById('about-us-section');
     if (aboutUsSection) {
@@ -61,8 +65,15 @@ function Navbar() {
        
       </div>
       <div className='flex bg-dark-blue w-[60%] justify-between p-6 text-white '>
-        <p className='hover:text-blue-300 cursor-pointer font-bold' onClick={Home}>Home</p>
+        <div className='flex gap-3'>
+        <i class="fa-solid fa-house mt-1"></i>
+        <p className='hover:text-blue-300 cursor-pointer font-bold ' onClick={Home}>Home</p>
+        </div>
+        <div className='flex gap-3'>
+        <i class="fa-solid fa-circle-info mt-[5px]"></i>
         <p className='hover:text-blue-300 cursor-pointer font-bold' onClick={scrollToAboutUs}>About Us</p>
+
+        </div>
         <div className='flex gap-2 relative'>
           <p className='hover:text-blue-300 cursor-pointer font-bold'>Menu</p>
           <i className="fa-solid fa-angle-down  mt-1 cursor-pointer" onClick={toggleMenu}></i>
@@ -72,10 +83,16 @@ function Navbar() {
               <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white 'onClick={Project}>Projects</p>
               <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Blog}>Blogs</p>
               <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Review}>Reviews</p>
+              <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Research}>Research</p>
+              <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Review}>Courses</p>
             </div>
           )}
         </div>
-        <p className='hover:text-blue-300 cursor-pointer font-bold' onClick={scrollToContactUs}>Contact Us</p>
+       <div className='flex gap-3'>
+       <i class="fa-solid fa-phone mt-[6px]"></i>
+       <p className='hover:text-blue-300 cursor-pointer font-bold' onClick={scrollToContactUs}>Contact Us</p>
+       
+       </div>
       </div>
     </div>
   );
