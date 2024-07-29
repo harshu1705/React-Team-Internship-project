@@ -4,7 +4,8 @@ import Home from '../src/Pages/Home'
 import Blog from '../src/Pages/Blog'
 import Project from '../src/Pages/Project'
 import Event from '../src/Pages/Event'
-import EventDetail from './Pages/EventDetail';
+import EventDetail from './Pages/EventDetail'
+import Review from './Pages/Review';
 function App() {
   return (
    <Router>
@@ -14,6 +15,9 @@ function App() {
         <Route path="/Project" element={<Project/>}/>
         <Route path="/Event" element={<Event/>}/>
         <Route path="/event/:id" element={<EventDetail />} />
+        <Route path="/Review" element={<Review />} />
+
+
       </Routes>
    </Router>
   );
