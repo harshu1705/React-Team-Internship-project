@@ -7,6 +7,8 @@ import Project from './Pages/Project';
 import Event from './Pages/Event';
 import EventDetail from './Pages/EventDetail';
 import CoursesPage from './Components/HomePage/CoursesPage';
+import Research from './Pages/Research';
+import Review from './Pages/Review'
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/event" element={<Event />} />
         <Route path="/event/:id" element={<EventDetail />} />
         <Route path="/courses" element={<CoursesPage />} />
+        <Route path="/Research" element={<Research />} />
+        <Route path="/Review" element={<Review />} />
       </Routes>
     </Router>
   );
