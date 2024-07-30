@@ -1,32 +1,20 @@
+// Blog.js
 import React from 'react';
-import BlogEntry from './Blogentry';
-import event4 from '../assets/event4.jpg';
-import event3 from '../assets/event3.jpg';
 
-const blogEntries = [
-  {
-    id: 1,
-    title: 'New Endeavours',
-    image: event4,
-    date: '20th July 2024',
-    content: 'Detailed content of New Endeavours...',
-  },
-  {
-    id: 2,
-    title: 'Another Adventure',
-    image: event3,
-    date: '25th July 2024',
-    content: 'Detailed content of Another Adventure...',
-  },
-  // Add more blog entries as needed
-];
+import BlogEntries from './BlogEntries';
+import BlogEntry from './BlogEntry';// Adjust the path if necessary
+import Navbar from '../Components/HomePage/Navbar';
+import Footer from '../Components/HomePage/Footer'
 
 function Blog() {
   return (
-    <div>
+    <div className='flex flex-col'>
+        <div className='flex'>
+            <Navbar/>
+        </div>
       <div className="our-blog"> Our Blog </div>
       <div className="flex-container">
-        {blogEntries.map((entry) => (
+        {BlogEntries.map((entry) => (
           <BlogEntry
             key={entry.id}
             id={entry.id}
@@ -36,6 +24,9 @@ function Blog() {
             content={entry.content}
           />
         ))}
+      </div>
+      <div>
+            <Footer/>
       </div>
     </div>
   );

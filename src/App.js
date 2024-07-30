@@ -9,6 +9,7 @@ import EventDetail from './Pages/EventDetail';
 import CoursesPage from './Components/HomePage/CoursesPage';
 import Research from './Pages/Research';
 import Review from './Pages/Review'
+import BlogDetail from './Pages/BlogDetails';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <Route path="/courses" element={<CoursesPage />} />
         <Route path="/Research" element={<Research />} />
         <Route path="/Review" element={<Review />} />
+        
+         <Route path="/blog/:id" element={<BlogDetail />} />
       </Routes>
     </Router>
   );
