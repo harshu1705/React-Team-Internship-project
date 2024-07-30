@@ -38,12 +38,7 @@ function Navbar() {
     navigate('/courses')
   }
 
-  const scrollToAboutUs = () => {
-    const aboutUsSection = document.getElementById('about-us-section');
-    if (aboutUsSection) {
-      aboutUsSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  
   const scrollToContactUs=()=>{
     const contactUsSection=document.getElementById('contact-us-section');
     if(contactUsSection){
@@ -59,9 +54,17 @@ function Navbar() {
       </div>
         <p className='text-[30px] pt-2 font-bold text-dark-blue '>XYZ COMPANY</p>
       </div>
+      <div className='flex  items-end'>
+        <div className='flex w-2 h-[18px] bg-dark-blue translate-x-[6px] rounded-l-full mt-12'>
+
+        </div>
+
+      </div>
       <div
-        className='flex bg-dark-blue w-[5%] translate-x-[1px]'
-        style={{ clipPath: 'polygon(100% 0, 100% 50%, 100% 100%, 5% 99%, 0 86%)' }}
+        className='flex bg-dark-blue w-[4%] translate-x-[1px]'
+        style={{ clipPath: 'polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 80%)',
+       
+      }}
       >
        
       </div>
@@ -74,12 +77,12 @@ function Navbar() {
         <p className='hover:text-blue-300 cursor-pointer font-bold ' onClick={Home}>Home</p>
         </div>
         <div className='flex gap-3'>
-        <i class="fa-solid fa-circle-info mt-[5px]"></i>
-        <p className='hover:text-blue-300 cursor-pointer font-bold' onClick={scrollToAboutUs}>About Us</p>
+        <i class="fa-regular fa-folder-open mt-[6px]"></i>
+        <p className='hover:text-blue-300 cursor-pointer font-bold' onClick={Courses}>Courses</p>
 
         </div>
         <div className='flex gap-2 relative'>
-          <p className='hover:text-blue-300 cursor-pointer font-bold'>Menu</p>
+          <p className='hover:text-blue-300 cursor-pointer font-bold'>More</p>
           <i className="fa-solid fa-angle-down  mt-1 cursor-pointer" onClick={toggleMenu}></i>
           {menuVisible && (
             <div className='absolute top-8 left-0 bg-white text-black p-2 shadow-lg w-24 z-10'>
@@ -88,7 +91,7 @@ function Navbar() {
               <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Blog}>Blogs</p>
               <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Review}>Reviews</p>
               <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Research}>Research</p>
-              <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Courses}>Courses</p>
+             
             </div>
           )}
         </div>
