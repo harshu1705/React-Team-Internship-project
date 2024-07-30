@@ -32,7 +32,12 @@ const courses = [
   { id: 1, title: 'React for Beginners', description: 'Learn the basics of React.' },
   { id: 2, title: 'Advanced JavaScript', description: 'Dive deeper into JavaScript.' },
   { id: 3, title: 'UI/UX Design Principles', description: 'Understand modern design practices.' },
-  // Add more courses as needed
+  { id: 4, title: 'React + SpringBoot ', description: 'Understand modern design practices.' },
+  { id: 5, title: 'Bootstrap CSS', description: 'Understand modern design practices.' },
+  // { id: 6, title: 'Node.js Express MongoDb', description: 'Understand modern design practices.' },
+  { id: 7, title: 'Blockchain + React', description: 'Understand modern design practices.' },
+  { id: 6, title: 'Node.js ', description: 'Understand modern design practices.' },
+  
 ];
 
 const CoursesPage = () => {
