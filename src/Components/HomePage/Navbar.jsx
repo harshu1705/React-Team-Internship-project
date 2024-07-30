@@ -34,6 +34,10 @@ function Navbar() {
     navigate('/Research');
   }
 
+  function Courses(){
+    navigate('/courses')
+  }
+
   const scrollToAboutUs = () => {
     const aboutUsSection = document.getElementById('about-us-section');
     if (aboutUsSection) {
@@ -84,7 +88,7 @@ function Navbar() {
               <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Blog}>Blogs</p>
               <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Review}>Reviews</p>
               <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Research}>Research</p>
-              <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Review}>Courses</p>
+              <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Courses}>Courses</p>
             </div>
           )}
         </div>

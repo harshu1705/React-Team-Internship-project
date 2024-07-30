@@ -3,6 +3,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import CourseCard from '../HomePage/CourseCard';
+import Navbar from '../HomePage/Navbar'
+import Footer from '../HomePage/Footer'
 
 const CoursesPageContainer = styled.div`
   display: flex;
@@ -35,14 +37,25 @@ const courses = [
 
 const CoursesPage = () => {
   return (
-    <CoursesPageContainer>
-      <CoursesHeading>Our Courses</CoursesHeading>
-      <CoursesGrid>
-        {courses.map(course => (
-          <CourseCard key={course.id} title={course.title} description={course.description} />
-        ))}
-      </CoursesGrid>
-    </CoursesPageContainer>
+   <div className='flex flex-col gap-5'>
+     <div>
+        <Navbar/>
+     </div>
+     <div>
+     <CoursesPageContainer>
+    
+    <CoursesHeading>Our Courses</CoursesHeading>
+    <CoursesGrid>
+      {courses.map(course => (
+        <CourseCard key={course.id} title={course.title} description={course.description} />
+      ))}
+    </CoursesGrid>
+  </CoursesPageContainer>
+     </div>
+     <div>
+      <Footer/>
+     </div>
+   </div>
   );
 };
 
