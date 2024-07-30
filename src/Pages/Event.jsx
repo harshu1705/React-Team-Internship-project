@@ -8,6 +8,7 @@ import event3 from '../assets/event3.jpg';
 import event4 from '../assets/event4.jpg';
 import event5 from '../assets/event5.jpg';
 import event6 from '../assets/event6.jpg';
+import Footer from '../Components/HomePage/Footer';
 
 const events = [
   {
@@ -66,6 +67,7 @@ function Event() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

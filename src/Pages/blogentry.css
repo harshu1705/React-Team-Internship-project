@@ -60,6 +60,7 @@
     font-size: 36px;
     color: #22395d;
     margin: 10px;  
+    font-weight: bold;
 
     
 }
@@ -74,39 +75,3 @@
 
 }
 
-  
-
-
-  /* .blog-entry {
-    background-color: #1d4ed8; 
-    padding: 20px;
-    text-align: center;
-    height: 10%;
-    color: white;
-    margin-left: 5%;
-    margin-right: 5%;
-    /* margin-top: 5%;
-    margin-bottom: 5%;
-    border-radius: 20px ;
-  }
-  
-  .blog-entry img {
-    width: 50px; /* Adjust as needed *
-    height: 50px;
-    margin-bottom: 10px;
-  }
-  .our-blog {
-    font-family: Arial, sans-serif;
-    font-size: 36px;
-    color: #1d4ed8;
-    margin: 10px; /* Or use specific margin properties *
-    display: flex;
-  }
-  .blog-entry title{
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    justify-content:flex-start;
-
-  }
-  */
-  

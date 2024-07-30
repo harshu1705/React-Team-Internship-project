@@ -3,6 +3,7 @@ import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Navbar from '../Components/HomePage/Navbar';
 import { motion } from 'framer-motion'; // Ensure framer-motion is installed
+import Footer from '../Components/HomePage/Footer';
 
 const EventDetail = () => {
   const location = useLocation();
@@ -25,6 +26,7 @@ const EventDetail = () => {
             Go back
           </button>
         </div>
+        <Footer />
       </div>
     );
   }
@@ -53,6 +55,7 @@ const EventDetail = () => {
           </div>
         </motion.div>
       </div>
+      <Footer />
     </div>
   );
 };
