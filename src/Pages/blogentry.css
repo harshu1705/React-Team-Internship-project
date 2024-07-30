@@ -1,6 +1,5 @@
 .blog-entry {
     background-color: #22395d; 
-    height: 200px;
     width: 1000px;
     color: white;
     padding: 10px;
@@ -14,7 +13,7 @@
 
 }
 
-.blog-entry-left{
+.blog-entry .blog-entry-left{
     display: flex;
     flex-direction: column;
     padding: 5px;
@@ -23,9 +22,16 @@
 .blog-entry-left img{
     align-items: center;
     justify-content: center;
+    border-radius: 30px;
+    padding-bottom: 10px;
 }
 
 /* star css part */
+.blog-stars{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 .blog-entry-right{
     display: flex;
@@ -75,3 +81,8 @@
 
 }
 
+.expanded-content {
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
