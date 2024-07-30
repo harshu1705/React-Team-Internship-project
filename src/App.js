@@ -6,7 +6,7 @@ import Blog from './Pages/Blog';
 import Project from './Pages/Project';
 import Event from './Pages/Event';
 import EventDetail from './Pages/EventDetail';
-import CoursesPage from './components/CoursesPage';
+import CoursesPage from '../src/Components/HomePage/CoursesPage';
 
 function App() {
   return (

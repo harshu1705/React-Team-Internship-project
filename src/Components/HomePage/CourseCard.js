@@ -1,4 +1,4 @@
-// src/components/CourseCard.js
+src/components/CourseCard.js
 
 import React from 'react';
 import styled from 'styled-components';

@@ -1,8 +1,8 @@
-// src/components/CoursesPage.js
+
 
 import React from 'react';
 import styled from 'styled-components';
-import CourseCard from './Components/CourseCard';
+import CourseCard from '../HomePage/CourseCard';
 
 const CoursesPageContainer = styled.div`
   display: flex;
