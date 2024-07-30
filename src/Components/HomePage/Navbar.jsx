@@ -54,10 +54,16 @@ function Navbar() {
       </div>
         <p className='text-[30px] pt-2 font-bold text-dark-blue '>XYZ COMPANY</p>
       </div>
+      <div className='flex  items-end'>
+        <div className='flex w-2 h-[18px] bg-dark-blue translate-x-[6px] rounded-l-full mt-12'>
+
+        </div>
+
+      </div>
       <div
-        className='flex bg-dark-blue w-[5%] translate-x-[1px]'
-        style={{ clipPath: 'polygon(100% 0, 100% 50%, 100% 100%, 5% 99%, 0 80%)',
-        borderRadius: '50% 0% 0% 20%'
+        className='flex bg-dark-blue w-[4%] translate-x-[1px]'
+        style={{ clipPath: 'polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 80%)',
+       
       }}
       >
        
