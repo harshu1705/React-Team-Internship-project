@@ -10,12 +10,15 @@ import CoursesPage from './Components/HomePage/CoursesPage';
 import Research from './Pages/Research';
 import Review from './Pages/Review'
 import BlogDetail from './Pages/BlogDetails';
+import SignUpPage from './Pages/SignUpPage';
+import Login from './Pages/Login'
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+      <Route path="/" element={<SignUpPage />} />
+        <Route path="/Home" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/project" element={<Project />} />
         <Route path="/event" element={<Event />} />
@@ -23,7 +26,7 @@ function App() {
         <Route path="/courses" element={<CoursesPage />} />
         <Route path="/Research" element={<Research />} />
         <Route path="/Review" element={<Review />} />
-        
+        <Route path="/Login" element={<Login />} />
          <Route path="/blog/:id" element={<BlogDetail />} />
       </Routes>
     </Router>
