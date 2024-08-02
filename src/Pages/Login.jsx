@@ -8,6 +8,10 @@ function Login() {
   function Visibility(){
     setVisible(!visible)
   }
+
+  function Submit(){
+    navigate('/SignUpPage')
+  }
   const navigate=useNavigate();
   const [formData, setFormData] = useState({
     email: '',
@@ -72,6 +76,7 @@ function Login() {
             />
           </div>
           {visible && <p className='font-bold text-red-600'>Plz try again</p>}
+          <p>Don't have an account?<span className='text-blue-700 font-bold cursor-pointer' onClick={Submit} >Register here</span></p>
           <div className="flex ">
             <button type="submit" className="flex bg-blue-700 text-white w-full p-3 rounded justify-center">
               SUBMIT
@@ -82,7 +87,11 @@ function Login() {
       <div className='flex '>
         <img src={SignUp} width={500} height={500} />
       </div>
+      
      </div>
+     
+    
+    
     </div>
   )
 }

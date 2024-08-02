@@ -17,7 +17,7 @@ function App() {
   return (
     <Router>
       <Routes>
-      <Route path="/" element={<SignUpPage />} />
+      <Route path="/SignUpPage" element={<SignUpPage />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/project" element={<Project />} />
@@ -26,7 +26,7 @@ function App() {
         <Route path="/courses" element={<CoursesPage />} />
         <Route path="/Research" element={<Research />} />
         <Route path="/Review" element={<Review />} />
-        <Route path="/Login" element={<Login />} />
+        <Route path="/" element={<Login />} />
          <Route path="/blog/:id" element={<BlogDetail />} />
       </Routes>
     </Router>

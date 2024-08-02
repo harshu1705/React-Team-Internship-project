@@ -9,6 +9,10 @@ function SignUpPage() {
   function visibility(){
     setVisible(!visible);
   }
+
+  function Login(){
+    navigate('/')
+  }
   const navigate=useNavigate();
   const [formData, setFormData] = useState({
     username: '',
@@ -31,7 +35,7 @@ function SignUpPage() {
       const response = await axios.post('http://localhost:3000/api/v1/users/register', formData);
       console.log('User registered:', response.data);
       alert("Sign Up successfully")
-      navigate('/Login')
+      navigate('/')
 
     } catch (error) {
       console.error('Error registering user:', error);
@@ -90,6 +94,7 @@ function SignUpPage() {
             />
           </div>
           {visible && <p className='font-bold text-red-600'>Plz try again</p>}
+          <p>Already have an account?<span className='font-bold text-blue-700 cursor-pointer' onClick={Login}>Login here</span></p>
           <div className="flex ">
             <button type="submit" className="flex bg-blue-700 text-white w-full p-3 rounded justify-center">
               SUBMIT
