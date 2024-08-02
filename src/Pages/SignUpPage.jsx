@@ -51,7 +51,7 @@ function SignUpPage() {
      <div className="p-7 bg-slate-200 items-center rounded-lg">
         <form onSubmit={handleSubmit} className="flex flex-col gap-4 p-4">
           <div className="flex flex-col gap-2">
-            <p className='text-[25px]'>Sign Up into new account</p>
+            <p className='text-[25px] font-bold text-blue-700'>Sign Up into new account</p>
 
             <div className='flex justify-center gap-2 border border-blue-700 px-10 py-2 bg-white '>
                 <i className="fa-brands fa-google mt-2"></i>

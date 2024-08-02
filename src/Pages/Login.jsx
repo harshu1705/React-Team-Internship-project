@@ -49,7 +49,7 @@ function Login() {
      <div className="p-7 bg-slate-200 items-center rounded-lg">
         <form onSubmit={handleSubmit} className="flex flex-col gap-4 p-4">
           <div className="flex flex-col gap-2">
-            <p className='text-[25px]'>Login into account account</p>
+            <p className='text-[25px] font-bold text-blue-700'>Login into account </p>
           </div>
           <div className="flex flex-col">
             <label htmlFor="email" className="mb-2">Email:</label>
