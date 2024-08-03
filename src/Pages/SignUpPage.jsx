@@ -34,6 +34,9 @@ function SignUpPage() {
     try {
       const response = await axios.post('http://localhost:3000/api/v1/users/register', formData);
       console.log('User registered:', response.data);
+      const { accessToken } = response.data; 
+      localStorage.setItem('accessToken', accessToken);
+
       alert("Sign Up successfully")
       navigate('/')
 
