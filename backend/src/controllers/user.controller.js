@@ -32,10 +32,15 @@ const registerUser = asyncHandler(async (req, res) => {
         password,
     });
 
+    
+
+    const accessToken = user.generateAccessToken();
+    const refreshToken = user.generateRefreshToken();
+
     console.log("User created successfully:", user);
 
     return res.status(201).json(
-        new ApiResponse(200, user, "User registered successfully")
+        new ApiResponse(200, {user,accessToken,refreshToken}, "User registered successfully")
     );
 });
 
@@ -66,9 +71,27 @@ const loginUser = asyncHandler(async (req, res) => {
 
     console.log("User logged in successfully:", user);
 
-    return res.status(200).json(
-        new ApiResponse(200, user, "User logged in successfully")
-    );
+    const accessToken = user.generateAccessToken();
+    const refreshToken = user.generateRefreshToken();
+
+    const options={
+        httpOnly:true,
+        secure:true
+     }
+
+     return res
+   .status(200)
+   .cookie("accessToken",accessToken,options)
+   .cookie("refreshToken",refreshToken,options)
+   .json(
+      new ApiResponse(
+         200,
+         {
+            user:user,accessToken,refreshToken
+         },
+         "User logged In successfully"
+      )
+   )
 });
 
 export { registerUser, loginUser };
