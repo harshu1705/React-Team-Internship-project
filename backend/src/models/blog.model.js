@@ -1,6 +1,11 @@
 import mongoose,{Schema} from "mongoose";
 
 const blogSchema=new Schema({
+    _id:{
+        type:Number,
+        required:true,
+        unique:true,
+    },
     title:{
         type:String,
         required:true,
