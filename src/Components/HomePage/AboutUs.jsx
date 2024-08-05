@@ -3,6 +3,7 @@ import Girl from '../HomePage/Girl.png'
 function AboutUs() {
   return (
     <div className= ' flex bg-dark-blue gap-2 flex-col p-2'>
+      
         <div>
             <p className='text-white flex justify-center text-[30px] font-bold'>About Us</p>
         </div>

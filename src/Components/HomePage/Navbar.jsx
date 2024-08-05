@@ -4,6 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import Logo from '../HomePage/LOGO.png'
 
 
+
 function Navbar() {
   const [menuVisible, setMenuVisible] = useState(false);
 
@@ -20,7 +21,7 @@ function Navbar() {
   }
 
   function Home(){
-    navigate('/');
+    navigate('/Home');
   }
 
   function Blog(){
@@ -37,7 +38,9 @@ function Navbar() {
   function Courses(){
     navigate('/courses')
   }
-
+  function blogDetails(){
+    navigate('/EnterBlog')
+  }
   
   const scrollToContactUs=()=>{
     const contactUsSection=document.getElementById('contact-us-section');
@@ -91,7 +94,7 @@ function Navbar() {
               <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Blog}>Blogs</p>
               <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Review}>Reviews</p>
               <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Research}>Research</p>
-             
+              <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={blogDetails}>Blog Details</p>
             </div>
           )}
         </div>
