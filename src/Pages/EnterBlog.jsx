@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function EnterBlog() {
     const [formData, setFormData] = useState({
@@ -14,7 +15,7 @@ function EnterBlog() {
             [name]: value,
         });
     };
-
+const navigate=useNavigate();
     const handleSubmit = async (event) => {
         event.preventDefault();
         //used to stop default reloading
@@ -22,6 +23,7 @@ function EnterBlog() {
             const response = await axios.post('http://localhost:3000/api/v1/users/blog', formData); 
             console.log('Blog info:', response.data);
             alert('Blog details added')
+            navigate('/Blog')
         } catch (error) {
             console.error('Error logging user:', error);
         }
