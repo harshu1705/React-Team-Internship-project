@@ -14,7 +14,7 @@ const counterSchema = new Schema({
 
 
 const Counter = mongoose.model("Counter", counterSchema);
-//_id can be written like sequenceName ,blogId 
+
 
 const getNextSequenceValue = async (sequenceName) => {
     const sequence = await Counter.findOneAndUpdate(
