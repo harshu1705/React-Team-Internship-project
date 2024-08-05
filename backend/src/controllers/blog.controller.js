@@ -52,4 +52,29 @@ const deleteBlog=asyncHandler(async(req,res)=>{
     res.status(200).json(new ApiResponse(200,"Blog deleted"))
 })
 
-export { blogUser, getBlogs, getBlogById,deleteBlog };
+const updateBlog = async (req, res) => {
+    const { id } = req.params;
+    const { title, description } = req.body;
+  
+    if (!title || !description) {
+      throw new ApiError(400, 'All fields are required');
+    }
+  
+    try {
+      const updatedBlog = await Blogs.findByIdAndUpdate(
+        id,
+        { title, description },
+        { new: true } 
+      );
+  
+      if (!updatedBlog) {
+        throw new ApiError(404, 'Blog not found');
+      }
+  
+      res.status(200).json(new ApiResponse(200, updatedBlog, 'Blog updated successfully'));
+    } catch (error) {
+      res.status(error.status || 500).json({ message: error.message });
+    }
+  };
+
+export { blogUser, getBlogs, getBlogById,deleteBlog,updateBlog };
