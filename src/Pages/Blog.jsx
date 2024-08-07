@@ -12,7 +12,9 @@ function Blog() {
   function moveToUpdateBlog(id){
     navigate(`/EnterBlog/${id}`)
   }
-
+  function handleReviews(){
+    navigate('/Review')
+  }
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
@@ -60,8 +62,9 @@ function Blog() {
             </i>
             <i class="fa-solid fa-trash cursor-pointer"  onClick={() => deleteBlogId(blog._id)} ></i>
           </div> 
-              <p className="text-white font-bold text-xl">{blog.title}</p>
+              <p className="text-white font-bold text-2xl">{blog.title}</p>
               <p className="text-white mt-2">{blog.description}</p>
+              <p className='font-bold text-white flex justify-end cursor-pointer' onClick={handleReviews}>ADD REVIEWS</p>
             </div>
           </div>
         ))}

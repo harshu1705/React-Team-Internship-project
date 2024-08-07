@@ -78,7 +78,7 @@ function EnterBlog() {
                     className='bg-dark-blue px-16 py-4 text-white rounded-lg'
                     onClick={()=>handleSubmit(id)}
                 >
-                    Submit
+                    Edit
                 </button>
             </div>
         </div>

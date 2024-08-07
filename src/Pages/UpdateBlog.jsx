@@ -52,7 +52,7 @@ function UpdateBlog() {
               <i className="fa-solid fa-code mt-1"></i>
               <p className="font-bold">Assign</p>
             </div>
-            <p className="font-bold text-[20px] font-bold text-dark-blue text-dark-blue">Description</p>
+            <p className="font-bold text-[20px]  text-dark-blue">Description</p>
             <div className="flex border border-slate-200 p-4 flex-col gap-5 rounded-lg bg-dark-blue w-full">
               <div className="flex gap-3 text-[20px] font-bold text-dark-blue text-white">
                 <i className="fa-solid fa-b"></i>

@@ -38,7 +38,7 @@ function App() {
          <Route path="/EnterBlog/:id" element={<EnterBlog/>}/>
          <Route path="/UpdateBlog" element={<UpdateBlog/>}/>
 
-         <Route path="/temp" element={<Count />} />
+         {/* <Route path="/temp" element={<Count />} /> */}
       </Routes>
     </Router>
   );

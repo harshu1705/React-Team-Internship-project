@@ -50,7 +50,7 @@ function SignUpPage() {
   return (
     <div className="flex justify-center items-center h-screen ">
       
-     <div className='flex bg-slate-200 rounded-lg'>
+     <div className='flex bg-slate-200 rounded-lg border-[5px] border-dark-blue'>
      <div className="p-7 bg-slate-200 items-center rounded-lg">
         <form onSubmit={handleSubmit} className="flex flex-col gap-4 p-4">
           <div className="flex flex-col gap-2">
@@ -60,8 +60,8 @@ function SignUpPage() {
                 <i className="fa-brands fa-google mt-2"></i>
                 <p className='text-[20px] text-blue-600 font-bold'>Login with Google</p>
             </div>
-            <p className='flex justify-center'>OR</p>
-            <label htmlFor="username" className="mb-2">Username:</label>
+            <p className='flex justify-center font-bold'>OR</p>
+            <label htmlFor="username" className="mb-2 font-bold">Username:</label>
             <input
               type="text"
               id="username"
@@ -73,7 +73,7 @@ function SignUpPage() {
             />
           </div>
           <div className="flex flex-col">
-            <label htmlFor="email" className="mb-2">Email:</label>
+            <label htmlFor="email" className="mb-2 font-bold">Email:</label>
             <input
               type="email"
               id="email"
@@ -85,7 +85,7 @@ function SignUpPage() {
             />
           </div>
           <div className="flex flex-col">
-            <label htmlFor="password" className="mb-2">Password:</label>
+            <label htmlFor="password" className="mb-2 font-bold">Password:</label>
             <input
               type="password"
               id="password"
@@ -105,9 +105,9 @@ function SignUpPage() {
           </div>
         </form>
       </div>
-      <div className='flex '>
+      {/* <div className='flex '>
         <img src={SignUp} width={500} height={500} />
-      </div>
+      </div> */}
      </div>
     </div>
   );

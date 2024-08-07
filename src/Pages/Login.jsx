@@ -45,26 +45,26 @@ function Login() {
   return (
     <div className="flex justify-center items-center h-screen ">
       
-     <div className='flex bg-slate-200 rounded-lg'>
+     <div className='flex bg-slate-200 rounded-lg border-[5px] border-dark-blue'>
      <div className="p-7 bg-slate-200 items-center rounded-lg">
         <form onSubmit={handleSubmit} className="flex flex-col gap-4 p-4">
           <div className="flex flex-col gap-2">
             <p className='text-[25px] font-bold text-blue-700'>Login into account </p>
           </div>
           <div className="flex flex-col">
-            <label htmlFor="email" className="mb-2">Email:</label>
+            <label htmlFor="email" className="mb-2 font-bold">Email:</label>
             <input
               type="email"
               id="email"
               placeholder="Email"
-              className="border border-black p-2 rounded"
+              className="border border-black p-2 rounded "
               name="email"
               value={formData.email}
               onChange={handleChange}
             />
           </div>
           <div className="flex flex-col">
-            <label htmlFor="password" className="mb-2">Password:</label>
+            <label htmlFor="password" className="mb-2 font-bold">Password:</label>
             <input
               type="password"
               id="password"
