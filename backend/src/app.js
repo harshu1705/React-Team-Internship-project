@@ -19,10 +19,12 @@ app.use(cookieParser())
 
 import userRouter from './routes/user.routes.js'
 import blogRouter from './routes/blog.router.js'
+import reviewRouter from './routes/review.router.js'
 
 
 app.use("/api/v1/users",userRouter)
 app.use("/api/v1/users",blogRouter)
+app.use("/api/v1/users",reviewRouter)
 
 //http://localhost:8000/api/v1/users/register
 
