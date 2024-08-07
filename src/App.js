@@ -14,6 +14,7 @@ import SignUpPage from './Pages/SignUpPage';
 import Login from './Pages/Login'
 import Redirect from './Pages/Redirest'
 import EnterBlog from './Pages/EnterBlog';
+import UpdateBlog from './Pages/UpdateBlog';
 
 function App() {
   
@@ -33,6 +34,7 @@ function App() {
         
          <Route path="/Redirect" element={<Redirect/>}/>
          <Route path="/EnterBlog" element={<EnterBlog/>}/>
+         <Route path="/UpdateBlog" element={<UpdateBlog/>}/>
       </Routes>
     </Router>
   );

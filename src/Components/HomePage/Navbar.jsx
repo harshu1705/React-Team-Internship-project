@@ -39,7 +39,7 @@ function Navbar() {
     navigate('/courses')
   }
   function blogDetails(){
-    navigate('/EnterBlog')
+    navigate('/UpdateBlog')
   }
   
   const scrollToContactUs=()=>{
@@ -54,6 +54,7 @@ function Navbar() {
       <div className='flex w-[30%] justify-center gap-10 p-3'>
       <div className='flex h-16 '>
       <img src={Logo} alt='xyz '  />
+      
       </div>
         <p className='text-[30px] pt-2 font-bold text-dark-blue '>XYZ COMPANY</p>
       </div>

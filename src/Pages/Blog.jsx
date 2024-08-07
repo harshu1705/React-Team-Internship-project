@@ -3,10 +3,15 @@ import axios from 'axios';
 import Navbar from '../Components/HomePage/Navbar';
 import Footer from '../Components/HomePage/Footer';
 import event2 from '../assets/event2.jpg';
+import { useNavigate } from 'react-router-dom';
 
 function Blog() {
   const [blogs, setBlogs] = useState([]);
- 
+  const navigate=useNavigate();
+
+  function moveToUpdateBlog(){
+    navigate('/EnterBlog')
+  }
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -51,7 +56,7 @@ function Blog() {
             </div>
             <div className="flex flex-col ml-5">
             <div className='flex gap-5 justify-end text-white'>
-            <i class="fa-solid fa-pen" >
+            <i class="fa-solid fa-pen cursor-pointer" onClick={moveToUpdateBlog}>
             </i>
             <i class="fa-solid fa-trash cursor-pointer"  onClick={() => deleteBlogId(blog._id)} ></i>
           </div> 
