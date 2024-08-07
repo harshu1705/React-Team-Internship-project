@@ -16,6 +16,8 @@ import Redirect from './Pages/Redirest'
 import EnterBlog from './Pages/EnterBlog';
 import UpdateBlog from './Pages/UpdateBlog';
 
+import Count from './Pages/Count';
+
 function App() {
   
   return (
@@ -33,8 +35,10 @@ function App() {
         <Route path="/" element={<Login />} />
         
          <Route path="/Redirect" element={<Redirect/>}/>
-         <Route path="/EnterBlog" element={<EnterBlog/>}/>
+         <Route path="/EnterBlog/:id" element={<EnterBlog/>}/>
          <Route path="/UpdateBlog" element={<UpdateBlog/>}/>
+
+         <Route path="/temp" element={<Count />} />
       </Routes>
     </Router>
   );

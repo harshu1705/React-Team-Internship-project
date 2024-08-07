@@ -9,8 +9,8 @@ function Blog() {
   const [blogs, setBlogs] = useState([]);
   const navigate=useNavigate();
 
-  function moveToUpdateBlog(){
-    navigate('/EnterBlog')
+  function moveToUpdateBlog(id){
+    navigate(`/EnterBlog/${id}`)
   }
 
   useEffect(() => {
@@ -56,7 +56,7 @@ function Blog() {
             </div>
             <div className="flex flex-col ml-5">
             <div className='flex gap-5 justify-end text-white'>
-            <i class="fa-solid fa-pen cursor-pointer" onClick={moveToUpdateBlog}>
+            <i class="fa-solid fa-pen cursor-pointer" onClick={()=>moveToUpdateBlog(blog._id)}>
             </i>
             <i class="fa-solid fa-trash cursor-pointer"  onClick={() => deleteBlogId(blog._id)} ></i>
           </div> 
