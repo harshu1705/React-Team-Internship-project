@@ -1,6 +1,10 @@
 import mongoose,{Schema} from "mongoose";
 
 const reviewSchema=new Schema({
+    username: {
+        type: String,
+        required: true, 
+    },
     blogId:{
         type:Number,
         required:true,

@@ -3,13 +3,10 @@ import { ApiError } from "../utils/ApiError.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 import { Reviews } from "../models/review.model.js";
 import { Blogs } from '../models/blog.model.js';  
-
+import { User } from "../models/user.model.js";
 const addReview = asyncHandler(async (req, res) => {
-  const {  description } = req.body;
-   
-
- 
-    if ([ description].some((field) => field.trim() === "")) {
+  const { username, blogId, description } = req.body;
+ if ([username,blogId, description].some((field) => field.trim() === "")) {
         throw new ApiError(400, "All fields are required");
     }
   
@@ -18,7 +15,17 @@ const addReview = asyncHandler(async (req, res) => {
     if(!blogExists){
         throw new ApiError(404,"Not found")
     }
-  const newReview = new Reviews({
+
+   
+    if (username) {
+      const user = await User.findOne({ username }).exec();
+      if (!user) {
+        throw new ApiError(404, "User not found");
+      }
+    }
+
+     const newReview = new Reviews({
+    username,
     blogId:parseInt(blogId, 10),
     description,
   });
@@ -34,7 +41,29 @@ const getReviewsByBlogId = asyncHandler(async (req, res) => {
   
     const reviews = await Reviews.find({ blogId: parseInt(blogId, 10) }).exec(); 
   
-    res.status(200).json(new ApiResponse(200, 'Reviews fetched successfully', reviews));
+    res.status(200).json(new ApiResponse(200,  reviews,'Reviews fetched successfully individually'));
   });
 
-export { addReview, getReviewsByBlogId };
+  const getReview=asyncHandler(async(req,res)=>{
+   const review=await Reviews.find()
+
+
+    if(!review){
+        throw new ApiError(404,"Not found")
+    }
+
+    res.status(200).json(new ApiResponse(200,review, 'Reviews fetched successfully'));
+  })
+
+  const deleteReview=asyncHandler(async(req,res)=>{
+    const {reviewId}=req.params
+    const review=await Reviews.findByIdAndDelete(reviewId)
+    
+    if(!review){
+      throw new ApiError(404,'Not found review')
+    }
+    res.status(200).json(new ApiResponse(200,review,"Review deleted successfully"))
+
+
+  })
+export { addReview, getReviewsByBlogId,getReview ,deleteReview};
