@@ -31,7 +31,7 @@ function App() {
         <Route path="/event/:id" element={<EventDetail />} />
         <Route path="/courses" element={<CoursesPage />} />
         <Route path="/Research" element={<Research />} />
-        <Route path="/Review" element={<Review />} />
+        <Route path="/Review/:id" element={<Review />} />
         <Route path="/" element={<Login />} />
         
          <Route path="/Redirect" element={<Redirect/>}/>

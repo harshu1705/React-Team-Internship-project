@@ -12,8 +12,8 @@ function Blog() {
   function moveToUpdateBlog(id){
     navigate(`/EnterBlog/${id}`)
   }
-  function handleReviews(){
-    navigate('/Review')
+  function handleReviews(id){
+    navigate(`/Review/${id}`)
   }
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -64,7 +64,7 @@ function Blog() {
           </div> 
               <p className="text-white font-bold text-2xl">{blog.title}</p>
               <p className="text-white mt-2">{blog.description}</p>
-              <p className='font-bold text-white flex justify-end cursor-pointer' onClick={handleReviews}>ADD REVIEWS</p>
+              <p className='font-bold text-white flex justify-end cursor-pointer' onClick={()=>handleReviews(blog._id)}>ADD REVIEWS</p>
             </div>
           </div>
         ))}

@@ -27,13 +27,13 @@ function Navbar() {
   function Blog(){
     navigate('/Blog');
   }
-  function Review(){
-    navigate('/Review');
-  }
+  // function Review(){
+  //   navigate('/Review');
+  // }
 
-  function Research(){
-    navigate('/Research');
-  }
+  // function Research(){
+  //   navigate('/Research');
+  // }
 
   function Courses(){
     navigate('/courses')
@@ -93,8 +93,8 @@ function Navbar() {
               <p className='p-1 cursor-pointer hover:bg-dark-blue hover:text-white 'onClick={Event} >Events</p>
               <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white 'onClick={Project}>Projects</p>
               <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Blog}>Blogs</p>
-              <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Review}>Reviews</p>
-              <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Research}>Research</p>
+              {/* <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Review}>Reviews</p>
+              <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={Research}>Research</p> */}
               <p className='p-1 cursor-pointer  hover:bg-dark-blue hover:text-white ' onClick={blogDetails}>Blog Details</p>
             </div>
           )}
